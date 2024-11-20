@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>
+StudentPassmark </title>
+<script language="javascript">
+function pass()
+{
+var mark1;
+mark1=document.frm.mark.value;
+if(mark1>=50)
+alert("You passed ");
+else
+alert("you failed ");
+}
+</script>
+</head>
+<body>
+<form name="frm">
+Enter your mark
+<input type="text" name="mark"><br><br>
+<input type="button" value="check" onClick="pass()" > 
+</form>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>day of week</title>
+<script language="javascript">
+function days()
+{
+var day1,show;
+day1=document.frm.day.value;
+switch(day1)
+{
+case '1':
+show=document.write("sunday");
+break;
+case '2':
+document.write("monday");
+break;
+case '3':
+document.write("tuesday");
+break;
+case '4':
+document.write("wednesday");
+break;
+case '5':
+document.write("thursday");
+break;
+case '6':
+document.write("friday");
+break;
+case '7':
+document.write("saturday");
+break;
+default:
+document.write("Enter valid choice ");
+}
+document.write(show);
+}
+</script>
+
+</head>
+<body>
+<form name="frm">
+Enter you wanted day number
+<input type="text" name="day"><br><br>
+<input type="button" value="submit" onClick="days()"> 
+</form>
+</body>
+</html>
